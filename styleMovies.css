@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Star Wars letra;
+    src: url("Starjedi.ttf")
+}
+
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+  
+      ::-webkit-scrollbar-track {
+        background: #000;
+      }
+  
+      ::-webkit-scrollbar-thumb {
+        background: #ffc107;
+        border-radius: 5px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+        padding: 2vw;
+      }
+      
+      h1 {
+        font-family: "Star Wars letra";
+        color: #ffc107;
+        text-align: center;
+        font-size: 2vw;
+        margin-bottom: 1vw;
+      }
+      
+      h2 {
+        color: #ffc107;
+      }
+      
+      .movie-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1vw;
+      }
+      
+      .movie-poster {
+        max-width: 10vw;
+        margin-right: 2vw;
+      }
+      
+      .movie-details {
+        flex-grow: 1;
+      }
+      
+      .movie-details p {
+        margin-bottom: 0.5vw;
+      }
+      
+      .loading-frame {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .loading-text {
+        color: #ffc107;
+        font-size: 1.6vw;
+      }
+      
+      /* Media query para celulares */
+      @media screen and (max-width: 767px) {
+        h1 {
+          font-size: 6vw;
+        }
+      
+        .movie-poster {
+          max-width: 60vw;
+          margin-right: 1vw;
+        }
+      
+        .movie-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      
+        .movie-details {
+          max-width: 80vw;
+        }
+      
+        .loading-frame {
+          height: 70vh;
+        }
+      }
+      
+      /* Media query para tablets */
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        h1 {
+          font-size: 4vw;
+        }
+      
+        .movie-poster {
+          max-width: 20vw;
+          margin-right: 2vw;
+        }
+      
+        .loading-frame {
+          height: 60vh;
+        }
+      }

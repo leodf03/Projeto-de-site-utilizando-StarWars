@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Star Wars letra;
+    src: url("Starjedi.ttf")
+}
+
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+  
+      ::-webkit-scrollbar-track {
+        background: #000;
+      }
+  
+      ::-webkit-scrollbar-thumb {
+        background: #ffc107;
+        border-radius: 5px;
+      }
+
+      body {
+        font-family: "Star Wars letra";
+        background-color: rgb(0, 0, 0);
+        color: #ffc107;
+        padding: 0.5vw;
+      }
+      
+      h1 {
+        font-size: 1vw;
+        margin-bottom: 0.3vw;
+        text-align: center;
+      }
+      
+      p {
+        font-size: 1vw;
+        margin-bottom: 0.3vw;
+        text-align: center;
+      }
+      
+      .my-image {
+        width: 30vw;
+        height: auto;
+        border-radius: 0.6vw;
+        box-shadow: 0.3vw 0.3vw 0.75vw rgba(0, 0, 0, 0.5);
+        filter: grayscale(50%);
+        opacity: 0.8;
+        transition: all 0.3s ease;
+      }
+      
+      .my-image:hover {
+        transform: scale(1.1);
+        filter: grayscale(0%);
+        opacity: 1;
+        box-shadow: 0.6vw 0.6vw 1.25vw rgba(0, 0, 0, 0.7);
+      }
+      
+      .my-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 80vh;
+      }
+      
+      .my-image {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      
+      .quote {
+        font-style: italic;
+        text-decoration: underline;
+        font-size: 0.8vw;
+      }
+      
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+      }
+      
+      .home-information {
+        background-color: #000000;
+        padding: 0.4vw;
+        margin-top: 0.64vw;
+      }
+      
+      /* Media query para tablets */
+      @media (max-width: 1024px) {
+        h1 {
+          font-size: 1.8vw;
+        }
+      
+        p {
+          font-size: 1.8vw;
+        }
+      
+        .my-image {
+          width: 50vw;
+          border-radius: 0.8vw;
+          box-shadow: 0.4vw 0.4vw 1vw rgba(0, 0, 0, 0.5);
+        }
+      
+        .quote {
+          font-size: 1.2vw;
+        }
+      
+        .home-information {
+          padding: 0.8vw;
+          margin-top: 1.28vw;
+        }
+      }
+      
+      /* Media query para celulares */
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 8vw;
+          word-break: break-word;
+        }
+      
+        p {
+          font-size: 8vw;
+          word-break: break-word;
+        }
+      
+        .my-image {
+          width: 80vw;
+          border-radius: 2vw;
+          box-shadow: 0.8vw 0.8vw 2vw rgba(0, 0, 0, 0.5);
+        }
+      
+        .quote {
+          font-size: 4vw;
+        }
+      
+        .home-information {
+          padding: 2vw;
+          margin-top: 3.2vw;
+        }
+      }
